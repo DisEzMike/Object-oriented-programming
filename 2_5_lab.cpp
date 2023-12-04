@@ -78,7 +78,7 @@ public :
     }
 
     ~anime(){
-        cout << full_name << "[" << playing_episode << "]" << " episode remaining" << endl;
+        cout << full_name << " - " << playing_episode << " " << "episode(s) has played" << endl;
     }
 
 };
