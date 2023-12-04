@@ -39,8 +39,11 @@ public :
     }
 
     void select_time(int time) {
-        if (time < 0 || time > length_per_episode) playing_sec = 0;
-        else playing_sec = time;   
+        if (time < 0 || time > length_per_episode) { 
+            playing_sec = 0;
+        } else {
+            playing_sec = time;
+        }  
     }
 
     anime(){
@@ -75,7 +78,7 @@ public :
     }
 
     ~anime(){
-        cout << full_name << "[" << total_episode - playing_episode << "]" << " episode remaining" << endl;
+        cout << full_name << "[" << playing_episode << "]" << " episode remaining" << endl;
     }
 
 };
