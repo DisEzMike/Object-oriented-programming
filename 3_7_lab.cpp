@@ -115,8 +115,8 @@ public :
     }
 
     episode(string _name,string _author,int _length, int _time, int ep_num, string ep_name) : media(_name,_author,_length, _time){ // 6 parameter constructor
-    episode_number = ep_num;
-    episode_name = ep_name;
+        episode_number = ep_num;
+        episode_name = ep_name;
     }
 
     void print_episode() {
@@ -139,11 +139,6 @@ public :
 
     void print_podcast(){
         cout << "now we playing " << name << " of " << station << " at " <<  get_playing_sec() << " sec" << endl;
-    }
-
-    void stop_podcast(){
-        reset();
-        cout << name << " has stopped" << endl;
     }
 };
 
