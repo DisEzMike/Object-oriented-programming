@@ -7,11 +7,6 @@ template <typename T> class prototype_calculator{
 public :
 
     virtual T add(T x,T y)  = 0;
-
-    // T add(T x,T y){
-    //     ....
-    // }
-
     virtual T subtract(T x,T y)  = 0;
     virtual T multiply(T x,T y)  = 0;
 
